@@ -94,6 +94,7 @@ class dbcontext
     }
 
 
+    /** @noinspection DuplicatedCode */
     public function editUser($id, $username, $password) : bool {
         $result = false;
         // use PDO

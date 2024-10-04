@@ -44,7 +44,8 @@ Vanuit _index.php_ wordt de _dbcontext_ class aangeroepen en worden de diverse C
 In deze oplossing gaan we meer kijken naar een zg. MVC-structuur. Hierbij worden de verschillende functionaliteiten nog meer gesplitst in aparte classes. Zo is er een _controller_ class die de input van de gebruiker afhandelt en doorstuurt naar de _model_ class. De _model_ class handelt de data af en stuurt deze weer terug naar de _controller_ class. De _controller_ class zorgt er vervolgens voor dat de data op de juiste manier wordt weergegeven aan de gebruiker.
 Deze structuur ziet er als volgt uit:
 
-index.php  
+index.php
+
 ├── controllers  
 │   └── UserController.php  
 ├── models  
@@ -54,9 +55,14 @@ index.php
 ├── config  
 │   └──dbcontext.php
 
+
+
 In deze oplossing is de _dbcontext_ class geplaatst in een aparte folder _config_. De _user_ class is geplaatst in de folder _models_. De _user_management.php_ is nieuw en geplaatst in de folder _views_.
 Ook de _UserController_ class is nieuw en geplaatst in de folder _controllers_.
 
 Vanuit _index.php_ wordt de _UserController_ class aangeroepen en worden de diverse CRUD methods getest.
 
 De verschillende classes zijn in folders geplaatst, met de autoloader functie wordt ervoor gezorgd dat de classes automatisch worden ingeladen. Dit zorgt voor een overzichtelijke structuur en maakt het makkelijk om classes te hergebruiken in andere projecten.
+
+
+
